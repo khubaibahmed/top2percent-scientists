@@ -1,0 +1,9 @@
+# source data (too large for GitHub)
+*.xlsx
+*.docx
+
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+Thumbs.db
