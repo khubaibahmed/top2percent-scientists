@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top 2% Scientists Dashboard</title>
+  <meta name="description" content="Interactive dashboard of the Stanford / Elsevier World's Top 2% Scientists list (2026 release, citations to end of 2025).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=202608.1">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <b>Top 2% Scientists</b>
+      <span>Stanford / Elsevier · 2026 release</span>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#scientists" data-page="scientists">Top Scientists</a>
+      <a href="#countries" data-page="countries">Countries</a>
+      <a href="#institutions" data-page="institutions">Institutions</a>
+      <a href="#subjects" data-page="subjects">Subjects</a>
+    </nav>
+    <div class="top-actions">
+      <div class="seg" id="listToggle" title="Which ranking list to show">
+        <button data-list="career" class="on">Career-long</button>
+        <button data-list="singleyr">Year 2025</button>
+      </div>
+      <button class="icon-btn" id="themeBtn" title="Toggle light / dark">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app"><div class="loading">Loading data…</div></main>
+
+  <footer>
+    Data: Ioannidis J.P.A., Pezzullo A.M., Cristiano A., Boccia S., Baas J. — <i>Updated science-wide author databases of standardized citation indicators</i>,
+    Elsevier Data Repository, version 9 (data extracted August 2026), <a href="https://doi.org/10.17632/btchxktzyw.9" target="_blank" rel="noopener">doi:10.17632/btchxktzyw.9</a>, licensed <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank" rel="noopener">CC BY-NC 3.0</a>.
+    Rankings are based on Scopus data and the composite citation score (c-score). This dashboard is an independent visualisation and is not affiliated with Stanford University or Elsevier.
+  </footer>
+
+  <script src="js/app.js?v=202608.1"></script>
+</body>
+</html>
