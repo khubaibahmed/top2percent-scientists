@@ -3,7 +3,7 @@
   "use strict";
 
   // ---------- state ----------
-  const DATA_VERSION = "202608.1";
+  const DATA_VERSION = "202608.2";
   const cache = {};
   const state = {
     list: "career",

@@ -35,8 +35,9 @@ NAME_FIX = {
 
 # names in the source that are not one institution (generic units, placeholders)
 GENERIC_INST = re.compile(
-    r"^(college|school|faculty|department|dept\.?|division) of|^independent|^not available$|^ltd\.?$|^inc\.?$"
-    r"|^private practice$|^consultant$|^retired$|^unknown$", re.I)
+    r"^(college|school|faculty|department|dept\.?|division) of [^,]*$"
+    r"|^independent\b|^not available$|^ltd\.?$|^inc\.?$|^private practice$|^consultant$|^retired$|^unknown$",
+    re.I)
 
 
 def country_name(code):
